@@ -28,16 +28,15 @@
                             <li><a href="wilpattu.html">WILPATTU NATIONAL PARK</a></li>
                         </div>
                     </div>
+                    <li><a href="login.html" id="log_nav">Login</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
 <div class="text-box">
-    <h1>Sri Lankan Wildlife</h1>
-    <p>Sri Lanka, an island paradise in the Indian Ocean, is 
-        home to a rich and diverse range of wildlife. <br>From lush 
-        jungles to pristine beaches, the country's ecosystems a wide variety of species.</p>
+    <h1 id="wildlife1"></h1>
+    <p id="para1"></p>
     <a href="#intro" class="hero-btn">Learn More</a>
 </div>
 
@@ -78,8 +77,16 @@
 
 </script>
 
+<div class="newsletter">
+    <h3>Subscribe to Our News Letter</h3>
+    <form id="newsletterForm">
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+</div>
+
 <section class="footer">
-    <h4>About Us</h4>
+    <h4>About Us</h4>`
     <p>&copy; 2024 Exotic Lanka. All rights reserved.</p>
     <div class="icons">
         <i class="fa fa-facebook"></i>
@@ -88,6 +95,9 @@
         <i class="fa fa-linkedin"></i>
     </div>
 </section>
+
+<script src="index.js"></script>
+<script src="news.js"></script>
 
 </body>
 </html>

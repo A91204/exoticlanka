@@ -83,6 +83,7 @@ body{
   animation: fadeIn 1.5s ease-in-out;
   animation-fill-mode: forwards;
 }
+
 .location-text-box{
   bottom: 0;
   left: 0;
@@ -356,6 +357,11 @@ nav img{
 .nav-links .dropdown:hover .dropdown-content{
   display: block;
 }
+
+#log_nav {
+  background-color: #000000;
+}
+
 .text-box{
   width: 90%;
   color: white;
@@ -534,4 +540,116 @@ h3{
   margin: 0 13px;
   cursor: pointer;
   padding: 18px 0;
+}
+
+@media (max-width: 750px) {
+  .menu {
+     display:none;
+     position: absolute;
+     background-color: #1b8a04;
+     right: 0;
+     left: 0;
+     text-align: center;
+     padding: 15px 0;
+   }
+ 
+   .menu li:hover {
+     display: inline-block;
+     background-color:#61c44e;
+     transition: 0.3s ease;
+     cursor: pointer;
+   }
+ 
+   .menu li + li {
+     margin-top: 12px;
+   }
+ 
+   .dropdown {
+     left: 50%;
+     top: 30px;
+   }
+ 
+   .dropdown li:hover {
+     background-color: #56aa46;
+   }
+ }
+
+
+ .login-box {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   width: 440px;
+   height: 380px;
+   margin: 50px auto;
+   background-color: #fff;
+   border-radius: 10px;
+   padding: 20px;
+}
+
+.login_info{
+ display: flex;
+ color: #ff0000;
+ font-size: 45px;
+ font-weight: 600;
+ margin: 70px auto;
+}
+
+.login-header header {
+   color: #333;
+   font-size: 30px;
+   font-weight: 600;
+   margin-bottom: 20px;
+}
+
+#Clear {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   color: white;
+   padding: 10px 20px;
+   text-align: center;
+   font-size: 18px;
+   margin: 30px auto;
+   cursor: pointer;
+   border-radius: 30px;
+   border: none;
+}
+ 
+#Clear:hover {
+   background-color: #bb2626; 
+}
+
+.newsletter {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.newsletter h3 {
+  margin-bottom: 10px;
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+
+#newsletterForm {
+  display: flex;
+  justify-content: center;
+}
+
+#email {
+  padding: 10px;
+  width: 250px;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
 }
